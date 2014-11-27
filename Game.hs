@@ -99,6 +99,6 @@ main =
      let f xs = case xs of (x:y:xs') -> (x,y) : f xs'
      let rs = f (randomRs (1,11) g)
      let (fs, pl) = playGame (randomStrategy rs) (randomStrategy rs)
-     mapM_ print fs
+     mapM_ (\s -> putStrLn (show s ++ "\n")) fs
      putStrLn ("Winner: " ++ show pl)
 

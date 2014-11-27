@@ -37,7 +37,7 @@ maintainer:          Manuel Eberl
 -- A copyright notice.
 -- copyright:           
 
-category:            List
+category:            ACME
 
 build-type:          Simple
 
